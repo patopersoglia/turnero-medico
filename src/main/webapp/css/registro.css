@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 50px;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    width: 100%;
+    max-width: 400px; /* Hacer el formulario responsivo */
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave para profundidad */
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #444; /* Color más oscuro para mejor contraste */
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-sizing: border-box;
+    transition: border-color 0.3s; /* Transición suave para el foco */
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #4CAF50; /* Resaltar campo activo */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3); /* Sombra para el foco */
+}
+
+/* Estilo para campos inválidos */
+input:invalid:not(:focus), select:invalid:not(:focus) {
+    border-color: #721c24;
+    background-color: #f8d7da;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.hidden {
+    display: none;
+}
+
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+    border: 1px solid #f5c6cb; /* Borde para mayor visibilidad */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+    border: 1px solid #c3e6cb;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.text-center {
+    text-align: center;
+    margin-top: 20px; /* Más separación del formulario */
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición suave para hover */
+}
+
+.btn-secondary {
+    background-color: #999;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #888;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 480px) {
+    form {
+        padding: 15px;
+    }
+
+    input, select {
+        padding: 6px;
+        font-size: 14px;
+    }
+
+    input[type="submit"], .btn {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+}

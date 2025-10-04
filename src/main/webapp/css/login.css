@@ -1,0 +1,173 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; /* Eliminar margen para centrar mejor el formulario */
+    background-color: #f9f9f9;
+    min-height: 100vh; /* Asegurar que el cuerpo ocupe toda la altura */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px; /* Padding para pantallas pequeñas */
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.col-xl-10, .col-lg-12, .col-md-9 {
+    width: 100%;
+    max-width: 600px;
+}
+
+.card {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave para profundidad */
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-center h1 {
+    color: #4CAF50;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para la clase text-gray-900 usada en el JSP */
+.text-gray-900 {
+    color: #333; /* Color oscuro para el título */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control-user {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s; /* Transición suave para el foco */
+}
+
+.form-control-user:focus {
+    outline: none;
+    border-color: #4CAF50; /* Resaltar campo activo */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3); /* Sombra para el foco */
+}
+
+/* Estilo para campos inválidos */
+.form-control-user:invalid:not(:focus) {
+    border-color: #721c24;
+    background-color: #f8d7da;
+}
+
+.btn {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s; /* Transición suave para hover */
+}
+
+.btn-user {
+    width: 100%;
+}
+
+.btn-primary {
+    background-color: #4CAF50;
+    color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Sombra para el botón */
+}
+
+.btn-primary:hover {
+    background-color: #45a049;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #c3e6cb; /* Borde para mayor visibilidad */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #f5c6cb; /* Borde para mayor visibilidad */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+.small {
+    color: #007bff; /* Color azul tradicional para enlaces */
+    font-size: 14px;
+}
+
+a.small {
+    text-decoration: none;
+}
+
+a.small:hover {
+    text-decoration: underline;
+    color: #0056b3; /* Color más oscuro al pasar el ratón */
+}
+
+/* Ajustes responsivos */
+@media (max-width: 480px) {
+    .card-body {
+        padding: 15px;
+    }
+
+    .form-control-user {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .text-center h1 {
+        font-size: 20px;
+    }
+
+    .alert-success, .alert-danger {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .small {
+        font-size: 12px;
+    }
+}

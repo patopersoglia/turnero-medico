@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    padding: 20px 0; /* Añadir padding vertical para evitar que el contenido toque los bordes */
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto; /* Centrar horizontalmente */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.table th, .table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.table tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Estilos para diferenciar si el turno es cancelable */
+.turno-cancelable {
+    background-color: #e7f3e7; /* Fondo verde claro, igual que estado-habilitado */
+}
+
+.turno-no-cancelable {
+    background-color: #f8d7da; /* Fondo rojo claro, igual que estado-deshabilitado */
+}
+
+td.center {
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+.btn-danger:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.text-center {
+    text-align: center;
+    margin-top: 10px; /* Mantener el margen pequeño para que el botón esté cerca de la tabla */
+}
+
+.btn-secondary {
+    background-color: #999;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #888;
+}
+
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+    border: 1px solid #c3e6cb;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+    border: 1px solid #f5c6cb;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajustes responsivos */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    .table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .table th, .table td {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .btn, .btn-danger {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+
+    .text-center {
+        margin-top: 5px; /* Reducir margen en móviles */
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .alert-success, .alert-danger {
+        padding: 8px;
+        font-size: 14px;
+    }
+}

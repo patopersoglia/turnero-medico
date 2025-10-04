@@ -1,0 +1,170 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; /* Eliminar margen para centrar mejor */
+    background-color: #f9f9f9;
+    min-height: 100vh; /* Asegurar que el cuerpo ocupe toda la altura */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px; /* Hacer el contenedor responsivo */
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave para profundidad */
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.table th, .table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.table tbody tr:hover {
+    background-color: #f5f5f5; /* Resaltar fila al pasar el ratón */
+}
+
+/* Estilos para diferenciar estados */
+.estado-habilitado {
+    background-color: #e7f3e7; /* Fondo verde claro para usuarios habilitados */
+}
+
+.estado-deshabilitado {
+    background-color: #f8d7da; /* Fondo rojo claro para usuarios deshabilitados */
+}
+
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+    border: 1px solid #c3e6cb; /* Borde para mayor visibilidad */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+    border: 1px solid #f5c6cb; /* Borde para mayor visibilidad */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.text-center {
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición suave para hover */
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Resaltar botón activo */
+}
+
+.btn-secondary {
+    background-color: #999;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #888;
+}
+
+.btn-action {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Sombra para el botón */
+}
+
+.btn-action:hover {
+    background-color: #45a049;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Sombra para el botón */
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    .table {
+        display: block;
+        overflow-x: auto; /* Hacer la tabla desplazable horizontalmente */
+        white-space: nowrap;
+    }
+
+    .table th, .table td {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .btn, .btn-action, .btn-danger {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .alert-success, .alert-danger {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
